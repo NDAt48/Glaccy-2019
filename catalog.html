@@ -11,13 +11,16 @@
     </a>
     <nav class="main-menu">
       <ul class="site-navigation">
-        <li class="catalog-navigation"><a href="#">Каталог</a>
-          <li><b class="new">Новинки</b></li>
-          <li><a href="#">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </li>
+          <li>
+            <a href="#">Каталог</a>
+            <ul class="catalog-navigation">
+              <li><b class="new">Новинки</b></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
@@ -80,7 +83,7 @@
     </p>
 	</header>
   <main>
-    <h1 class= visually-hidden">Каталог магазина Глейси</h1>
+    <h1 class="visually-hidden">Каталог магазина Глейси</h1>
     
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
@@ -128,6 +131,7 @@
             <input class="visually-hidden" type="radio" name="fat-percent" id="fat->30-percent">
             <label class="radio-checkbox" for="fat->30-percent">выше 30%</label>
           </li>
+        </ul>
       </fieldset>
       <fieldset>
         <legend>Наполнители:</legend>
@@ -145,13 +149,14 @@
             <label class="square-checkbox" for="fruits">фрукты</label>
           </li>
           <li class="filter-option">
-            <input class="visually-hidden" type="checkbox" name="syrup" id="syrup" c>
+            <input class="visually-hidden" type="checkbox" name="syrup" id="syrup">
             <label class="square-checkbox" for="syrup">сиропы</label>
           </li>
           <li class="filter-option">
             <input class="visually-hidden" type="checkbox" name="jam" id="jam">
             <label class="square-checkbox" for="jam">джемы</label>
           </li>
+        </ul>
       </fieldset>
       <button class="button button-submit" type="submit">Применить</button>
     </form>
@@ -237,13 +242,13 @@
       </ul>
 
       <ul class="pagination-list">
-        <span class="visually-hidden">Назад</span>
+        <li><span class="visually-hidden">Назад</span></li>
         <li class="pagination-item pagination-item-current"><a>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <span class="visually-hidden">Вперед</span>
+        <li><span class="visually-hidden">Вперед</span></li>
       </ul>
     </section>
   </main>
@@ -271,6 +276,7 @@
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
+      </ul>
     </div>
 
     <div class="about-us">
@@ -287,6 +293,7 @@
         <li>
           <a href="#">Экологические стандарты</a>
         </li>
+      </ul>
     </div>
 
     <p class="copyright">
