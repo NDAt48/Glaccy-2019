@@ -9,15 +9,15 @@
 </head>
 <body class="inner-page">
 	<header class="main-header">
-    <a  href="#" class="main-header-logo">
+    <a  href="index.html" class="main-header-logo">
       <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип сайта Глейси">
     </a>
     <nav class="main-menu">
       <ul class="site-navigation">
           <li>
-            <a href="#">Каталог</a>
+            <a class="current">Каталог</a>
             <ul class="catalog-navigation">
-              <li><b class="new">Новинки</b></li>
+              <li class="new">Новинки</li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -30,7 +30,7 @@
       <ul class="user-navigation">
         <li>
           <form class="search-form" action="#" method="get">
-          <button class="button button-search" type="submit">Поиск</button>
+          <button class="button-search" type="submit">Поиск</button>
           <p>
             <label class="visually-hidden" for="site-search">Поиск по сайту</label>
             <input type="search" id="site-search" placeholder="Что ищем?" name="search">
@@ -56,7 +56,7 @@
           </form>
         </li>
         <li class="cart">
-          <button class="button" type="button">2 товара</button>
+          <button class="button-cart" type="button">2 товара</button>
           <ul class="cart-items">
             <li class="cart-item">
               <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -91,12 +91,12 @@
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог</a></li>
-      <li><a>Сливочное мороженое</a></li>
+      <li><a class="current-bc">Сливочное</a></li>
     </ul>
 
-    <h2 class="page-tittle">Сливочное мороженое</h2>
+    <h2 class="page-title">Сливочное мороженое</h2>
 
-    <form class="filter-form" action="#" method="get">>
+    <form class="filter-form" action="#" method="get">
       <fieldset>
         <legend>Сортировка:</legend>
       <select name="filter-sort">
@@ -161,7 +161,7 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button button-submit" type="submit">Применить</button>
+      <button class="button-sort" type="submit">Применить</button>
     </form>
 
     <section class="catalog">
@@ -171,75 +171,75 @@
         <li class="catalog-item">
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <img src="img/popular-item-1.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">310 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">310 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочно-кофейное с кусочками шоколада</h3>
           <img src="img/popular-item-2.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">380 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">380 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
           <img src="img/popular-item-3.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">355 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">355 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           <img src="img/popular-item-4.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">415 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">415 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <!-- Начало второй строки -->
         <li class="catalog-item">
           <h3>Сливочное с брусничным джемом</h3>
           <img src="img/catalog-item-5.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">325 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">325 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочно-черничное с цельными ягодами черники </h3>
           <img src="img/catalog-item-6.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">410 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">410 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочно-лимонное с карамельной присыпкой</h3>
           <img src="img/catalog-item-7.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">375 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">375 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочное с шоколадной стружкой</h3>
           <img src="img/catalog-item-8.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">320 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">320 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <!-- Начало третьей строки -->
         <li class="catalog-item">
           <h3>Сливочно-ванильное с кусочками шоколада</h3>
           <img src="img/catalog-item-9.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">440 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">440 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочноe с ментоловым сиропом</h3>
           <img src="img/catalog-item-10.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">435 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">435 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочное с кусочками черного шоколада</h3>
           <img src="img/catalog-item-11.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">355 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">355 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="catalog-item">
           <h3>Сливочное с мятным сиропом</h3>
           <img src="img/catalog-item-12.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">420 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">420 Р</span> / кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
