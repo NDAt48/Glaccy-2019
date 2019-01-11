@@ -253,7 +253,95 @@ a {
   border-bottom: solid 2px #353535;
 }
 
+.news-item a:hover,
+.news-item a:focus {
+  color: #e84d37;
+  border-bottom-color: rgba(232, 77, 55, 0.3);
+}
+
+.news-item a:active {
+  color: #e84d37;
+  border-bottom-color: rgba(232, 77, 55, 0.3);
+}
+
 .mailing {
   color: #5a5a5a;
   background-color: #f8f7f4;
+}
+
+.contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  
+  color: #323232;
+  background-color: #fffffe;
+}
+
+.contacts .text-uppercase {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.about-us a {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.about-us a:hover,
+.about-us a:focus {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.about-us a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.about-us a.heart {
+  font-weight: 500;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.copyright a {
+  color: #fefefe;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.2);
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.copyright a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.modal-write-us {
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.write-us-slogan {
+  font-size: 24px;
+  line-height: 28px;
 }
