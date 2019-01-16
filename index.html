@@ -28,7 +28,7 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li>
+        <li class="search-item">
           <form class="search-form" action="#" method="get">
           <button class="button-search" type="submit">
             <span class="visually-hidden">Поиск</span>
@@ -41,8 +41,10 @@
           </p>
         </form>
         </li>
-        <li>
-          <a class="login-link" href="#">Вход</a>
+        <li class="login-item">
+          <a class="login-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" transform="translate(-6 5)"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
+          </svg>Вход</a>
           <form class="login-form" action="#" method="post">
             <p>
               <label class="visually-hidden" for="login-email">Введите ваш e-mail</label>
@@ -59,7 +61,11 @@
             <button class="button" type="submit">Войти</button>
           </form>
         </li>
-        <li><button class="button-cart" type="button">Пусто</button></li>
+        <li>
+          <button class="button-cart" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" transform="translate(-29 -2)"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g>
+          </svg>Пусто</button>
+        </li>
       </ul>
     </nav>
     <p class="phone-info">
@@ -75,21 +81,21 @@
       <h2 class="visually-hidden">Промо товаров</h2>
       <ul class="slider-list">
         <li class="slider-item">
-          <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+          <h3>Крем-брюле и пломбир<br><span class="text-center">с малиновым джемом</span></h3>
           <p class="slider-image">
             <img src="img/icecream-slider-1.png" width="1045" height="881" alt="Изображение Крем-брюле и пломбира с малиновым джемом">
           </p>
           <a class="button" href="#">Давайте оба!</a>
         </li>
         <li class="slider-item">
-          <h3>Шоколадный пломбир и лимонный сорбет</h3>
+          <h3>Шоколадный пломбир<br><span class="text-center">и лимонный сорбет</span></h3>
           <p class="slider-image">
             <img src="img/icecream-slider-2.png" width="1065" height="859" alt="Изображение Шоколадного пломбира и лимонного сорбета">
           </p>
           <a class="button" href="#">Давайте оба!</a>
         </li>
         <li class="slider-item">
-          <h3>Пломбир с помадкой и клубничный щербет</h3>
+          <h3><span class="text-center">Пломбир с помадкой</span><br> и клубничный щербет</h3>
           <p class="slider-image">
             <img src="img/icecream-slider-3.png" width="1079" height="854" alt="Изображение Пломбира с помадкой и клубничного щербета">
           </p>

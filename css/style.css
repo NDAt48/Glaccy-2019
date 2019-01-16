@@ -82,13 +82,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*Временные стили для выравнивания сетки*/
-.search-form p {
-  display: none;
-}
-
-.login-form {
-  display: none;
-}
 .cart {
   display: none;
 }
@@ -272,21 +265,107 @@ li.catalog-button::after {
   color: #323232;
 }
 
-.search-form p{
+.search-form {
+  position: relative;
+}
+
+.search-item:hover p {
+  display: block;
+}
+
+
+.search-form p {
+  position: absolute;
+  left: -309px;
+  display: none;
+  width: 340px;
+  margin: 0;
+  padding: 0;
+  padding: 19px 13px;
+  padding-bottom: 21px;
+  padding-right: 15px;
   background-color: #f8f7f4;
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.search-form input,
+.login-form input {
+  width: 100%;
+  padding-top: 9px;
+  padding-left: 13px;
+  padding-bottom: 9px;
+}
+
+.login-item {
+  position: relative;
 }
 
 .login-form {
+  position: absolute;
+  top: 36px;
+  left: -184px;
+  z-index: 2;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 278px;
+  padding-top: 20px;
+  padding-right: 13px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  border-radius: 6px;
   background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
 }
 
-.login-help a{
+.login-form p {
+  margin: 0;
+  padding: 0;
+}
+
+.login-form input {
+  width: 241px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  align-self: center;
+  width: 100px;
+  border-radius: 19px;
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  text-shadow: none;
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  box-shadow: 0 1px 2px 0px #ac1000;
+}
+
+.login-form button:active {
+  box-shadow: inset 0px 1px 2px 0px #942718;
+}
+
+.login-help {
+  width: 125px;
+  order: 2;
+}
+
+.login-help a {
   font-size: 13px;
+  font-weight: 500;
   line-height: 24px;
   color: #323232;
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid #adacaa;
 }
 
+.login-help .login-registr {
+  position: relative;
+  top: -4px;
+}
 
 .button-search,
 .login-link,
@@ -302,7 +381,10 @@ li.catalog-button::after {
 .button-search {
   width: 32px;
   height: 32px;
+  padding: 0;
   border-radius: 50px;
+  border: none;
+  cursor: pointer;
 }
 
 .button-search svg {
@@ -312,19 +394,42 @@ li.catalog-button::after {
 
 .login-link {
   display: block;
-  padding-top: 8px;
-  padding-right: 16px;
+  padding-top: 1px;
+  padding-right: 18px;
   padding-bottom: 8px;
-  padding-left: 45px;
+  padding-left: 22px;
+}
+
+.login-item:hover .login-form {
+  display: flex;
+}
+
+.login-item:hover path,
+.login-link:hover path,
+.login-link:focus path {
+  fill: #000000;
 }
 
 .button-cart {
+  position: relative;
   margin-right: 0;
   padding-top: 8px;
   padding-right: 34px;
   padding-bottom: 8px;
   padding-left: 43px;
 }
+
+.button-cart svg {
+  position: absolute;
+}
+
+.button-cart:hover g,
+.button-cart:focus g {
+  fill: #000000;
+}
+
+.login-item:hover .login-link,
+.login-item:focus .login-link,
 .login-link:hover,
 .button-cart:hover,
 .login-link:focus,
@@ -333,14 +438,21 @@ li.catalog-button::after {
   background-color: #f8f7f4;
 }
 
+.search-item:hover .button-search,
 .button-search:hover,
 .button-search:focus {
   background-color: rgba(248, 247, 244, 1);
 }
 
+.search-item:hover path,
 .button-search:hover path,
 .button-search:focus path {
   fill: #000000;
+}
+
+.button-search:active {
+  background-color: rgba(248, 247, 244, 1);
+  padding: 0;
 }
 
 .cart {
@@ -369,13 +481,17 @@ li.catalog-button::after {
 
 .phone-info {
   display: flex;
-  width: 166px;
+  width: 170px;
   margin: 0;
   margin-left: auto;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
+.phone-info .text-uppercase {
+  position: relative;
+  top: -2px;
+}
 .text-normal {
   font-size: 14px;
   line-height: 16px;
@@ -392,16 +508,6 @@ li.catalog-button::after {
   margin-bottom: 40px;
 }
 
-.promo-slider h3 {
-  font-size: 60px;
-  line-height: 60px;
-}
-
-.promo-slider .button {
-  font-size: 32px;
-  line-height: 44px;
-}
-
 .slider-list {
   padding: 0;
   margin: 0;
@@ -413,13 +519,44 @@ li.catalog-button::after {
   justify-content: flex-end;
   flex-direction: column;
   position: relative;
-  min-height: 462px;
+  min-height: 492px;
   z-index: 1;
+}
+
+.slider-item h3 {
+  align-self: center;
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.slider-item .text-center {
+  padding: 0 10px;
+}
+
+.slider-item:nth-child(2) .text-center {
+  padding: 0 35px;
+}
+
+.slider-item:nth-child(3) .text-center {
+  padding: 0 15px;
+}
+
+.slider-item .button {
+  width: 279px;
+  margin-bottom: 5px;
+  align-self: center;
+  font-size: 32px;
+  line-height: 44px;
+  box-sizing: border-box;
 }
 
 .slider-image {
   position: absolute;
   top: -135px;
+  left: 50px;
   z-index: -1;
 }
 
@@ -433,6 +570,46 @@ li.catalog-button::after {
 }
 /*временные для сетки стили*/
 
+.slider-buttons {
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  display: flex;
+}
+
+.slider-button {
+  width: 21px;
+  height: 21px;
+  margin-right: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slider-button--active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-button:hover,
+.slider-button:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-button--active:hover,
+.slider-button--active:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-button:active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.slider-button:last-child {
+  margin-right: 0;
+}
+
 .advertising {
   position: relative;
   z-index: 1;
@@ -440,6 +617,7 @@ li.catalog-button::after {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 .advertising h3 {
   font-size: 35px;
   line-height: 41px;
@@ -802,7 +980,7 @@ li.catalog-button::after {
 .search-form input,
 .modal-write-us input,
 .modal-write-us textarea {
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #d3d3d2; 
   /*Бордер потом можно компенсировать паддингами*/
   box-sizing: border-box;
@@ -813,7 +991,7 @@ li.catalog-button::after {
 .search-form input:hover,
 .modal-write-us input:hover,
 .modal-write-us textarea:hover {
-  border: 2px solid #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
   outline: none;
 }
 
@@ -821,7 +999,7 @@ li.catalog-button::after {
 .search-form input:focus,
 .modal-write-us input:focus,
 .modal-write-us textarea:focus {
-  border: 2px solid #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
   outline: none;
 }
 
