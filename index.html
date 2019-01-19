@@ -7,8 +7,8 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="container">
-	<header class="main-header">
+<body class="body-bg">
+	<header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
       <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип сайта Глейси">
@@ -77,7 +77,7 @@
   <main>
     <h1 class="visually-hidden">Глейси</h1>
 
-    <section class="promo-slider">
+    <section class="promo-slider container">
       <h2 class="visually-hidden">Промо товаров</h2>
       <ul class="slider-list">
         <li class="slider-item">
@@ -115,7 +115,7 @@
       </div>
     </section>
 
-    <section class="advertising">
+    <section class="advertising container">
       <h2 class="visually-hidden">Рекламные акции</h2>
 
       <section class="advertising-raspberry">
@@ -136,37 +136,37 @@
 
     </section>
 
-    <section class="popular-items">
+    <section class="popular-items container">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-items-list">
         <li class="popular-item">
-          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          <h3 class="popular-item-title"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
           <img src="img/popular-item-1.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">310 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">310 &#8381</span>/кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular-item">
-          <h3>Сливочно-кофейное с кусочками шоколада</h3>
+          <h3 class="popular-item-title"><span>Сливочно-кофейное с кусочками шоколада</span></h3>
           <img src="img/popular-item-2.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">380 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">380 &#8381</span>/кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular-item">
-          <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          <h3 class="popular-item-title"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
           <img src="img/popular-item-3.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">355 р</span> / кг</p>
-          <a class="hidden button" href="#">Быстрый просмотр</a>
+          <p class="popular-item-info"> <span class="text-uppercase">355 &#8381</span>/кг</p>
+          <a class="button" href="#">Быстрый просмотр</a>
         </li>
         <li class="popular-item">
-          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+          <h3 class="popular-item-title"><span>Сливочное крем-брюле с карамельной подливкой</span></h3>
           <img src="img/popular-item-4.png" width="267" height="267" alt="Изображение мороженого">
-          <p class="popular-item-info"> <span class="text-uppercase">415 р</span> / кг</p>
+          <p class="popular-item-info"> <span class="text-uppercase">415 &#8381</span>/кг</p>
           <a class="hidden button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
 
-    <section class="features">
+    <section class="features container">
       <h2 class="visually-hidden">Преимущества</h2>
       <p class="features-title"> Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul class="features-list">
@@ -185,7 +185,7 @@
       </ul>
     </section>
     
-  <div class="index-columns">
+  <div class="index-columns container">
     <section class="news">
       <h3> Новое в нашем блоге</h3>
       <p class="news-item">
@@ -209,51 +209,52 @@
   <div class="map-wrapper">
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1547894717855" width="1200" height="430" allowfullscreen></iframe>
       <p>
         <img src="img/map.png" width="1200" height="430" alt="Карта офиса и офлайн-магазина по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
     </section>
-
-    <section class="contacts">
+  </div>
+  <div class="contacts-wrapper container">
+   <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts-address">
-        Адрес главного офиса
+        Адрес главного офиса<br>
         и офлайн-магазина:
+        <br>
         <span class="text-uppercase">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
       </p>
       <p class="contacts-phone">
-        Для заказов по телефону:
+        Для заказов по телефону:<br>
         <span class="text-uppercase">8 812 450-25-25</span>
         (с 10 до 20 ежедневно)
       </p>
-      <p class="feedback-button">
-        <a class="button" href="#">Форма обратной связи</a>
-      </p>
+        <a class="feedback-button button" href="#">Форма обратной связи</a>
     </section>
   </div>
 
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
 
     <div class="footer-social">
       <ul>
         <li>
-          <a href="">
+          <a href="#" class="social-button social-tw">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#" class="social-button social-in">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#" class="social-button social-fb">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#" class="social-button social-vk">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
@@ -261,13 +262,15 @@
     </div>
 
     <div class="about-us">
-      <ul>
+      <ul class="about-us-info">
         <li>
-          <a class="heart" href="#">Для поставщиков</a>
+          <a href="#">Для поставщиков</a>
         </li>
         <li>
           <a href="#">Наши документы</a>
         </li>
+      </ul>
+      <ul class="about-us-documents">
         <li>
           <a href="#">О производстве</a>
         </li>
