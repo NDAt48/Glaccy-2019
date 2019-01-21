@@ -39,6 +39,12 @@ input[type="radio"].visually-hidden {
   padding: 0 27px;
 }
 
+.inner-page {
+  background-image: url("../img/lighting-bg.png");
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+}
+
 .button {
   display: inline-block;
   padding: 10px 19px;
@@ -80,12 +86,6 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   display: flex;
 }
-
-/*Временные стили для выравнивания сетки*/
-.cart {
-  display: none;
-}
-/*Временные стили для выравнивания сетки*/
 
 .main-header-logo {
   width: 154px;
@@ -241,7 +241,8 @@ li.catalog-button::after {
   padding-bottom: 14px;
 }
 
-.catalog-button:hover .catalog-navigation {
+.catalog-button:hover .catalog-navigation,
+.catalog-button:focus .catalog-navigation {
   display: block;
 }
 
@@ -378,6 +379,7 @@ li.catalog-button::after {
   border-radius: 20px;
 }
 
+
 .button-search {
   width: 32px;
   height: 32px;
@@ -419,6 +421,11 @@ li.catalog-button::after {
   padding-left: 43px;
 }
 
+.inner-page .button-cart {
+  padding-right: 19px;
+  padding-left: 41px;
+}
+
 .button-cart svg {
   position: absolute;
 }
@@ -455,15 +462,97 @@ li.catalog-button::after {
   padding: 0;
 }
 
+/*Временные стили
+.cart-items {
+  display: none;
+}
+
+.cart-sum {
+  display: none;
+}
+Временные стили*/
+
 .cart {
+  position: relative;
+}
+
+.cart-hidden {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 15px;
   background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cart:hover .cart-hidden,
+.cart:focus .cart-hidden {
+  display: flex;
 }
 
 .cart-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 510px;
+  margin-bottom: 11px;
+  font-size: 13px;
+  line-height: 16px;
   color: #323232
 }
 
+.cart-item .modal-close {
+  width: 11px;
+  height: 11px;
+  margin-right: 14px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/svg/cross-small.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.cart-title {
+  width: 220px;
+  margin: 0;
+  margin-right: 26px;
+}
+
+.cart-item:nth-child(even) .cart-title {
+  padding-top: 19px;
+}
+
+.cart-item:last-child {
+  margin-bottom: 15px;
+}
+
+.cart-amount {
+  width: 103px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.cart-price {
+  width: 65px;
+}
+
+.cart-item img {
+  width: 33px;
+  height: 33px;
+  margin-right: 14px;
+}
+
 .cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
   border-bottom: 1px solid #cacac7;
 }
@@ -472,11 +561,27 @@ li.catalog-button::after {
   color: #999999;
 }
 
-.cart-sum p {
+.cart-sum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding-top: 14px;
+}
+
+.cart-sum > p {
+  margin: 0;
+  margin-bottom: 14px;
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
   color: #323232;
+}
+
+.cart-sum .button {
+  width: 171px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .phone-info {
@@ -573,7 +678,7 @@ li.catalog-button::after {
 .slider-buttons {
   position: absolute;
   bottom: 26px;
-  left: 0;
+  left: 27px;
   display: flex;
 }
 
@@ -1091,6 +1196,7 @@ li.catalog-button::after {
 }
 
 .catalog-item {
+  position: relative;
   width: 267px;
 }
 
@@ -1246,13 +1352,47 @@ li.catalog-button::after {
   border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
-.about-us a.heart {
+.heart {
+  position: relative;
+}
+
+.heart > a {
   font-weight: 500;
 }
 
+.heart::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -21px;
+  width: 15px;
+  height: 13px;
+
+  background-image: url("../img/svg/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .copyright {
+  position: relative;
+  margin: 0;
+  padding-top: 54px;
   font-size: 12px;
+  font-weight: 500;
   line-height: 18px;
+}
+
+.copyright::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 108px;
+  height: 40px;
+
+  background-image: url("../img/svg/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .copyright a {
