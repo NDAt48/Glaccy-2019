@@ -45,6 +45,10 @@ input[type="radio"].visually-hidden {
   background-position: 50% 0;
 }
 
+.inner-page main {
+  margin-top: -20px;
+}
+
 .button {
   display: inline-block;
   padding: 10px 19px;
@@ -179,6 +183,17 @@ li.catalog-button::after {
   background-color: #d07058;
   border-bottom: none;
   box-shadow: none;
+}
+
+.site-navigation .current-site-nav > a{
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 13px;
+  box-shadow: none;
+}
+
+.site-navigation .current-site-nav::after {
+  content: none;
 }
 
 .catalog-navigation {
@@ -435,6 +450,8 @@ li.catalog-button::after {
   fill: #000000;
 }
 
+.cart:hover .button-cart,
+.cart:focus .button-cart,
 .login-item:hover .login-link,
 .login-item:focus .login-link,
 .login-link:hover,
@@ -461,16 +478,6 @@ li.catalog-button::after {
   background-color: rgba(248, 247, 244, 1);
   padding: 0;
 }
-
-/*Временные стили
-.cart-items {
-  display: none;
-}
-
-.cart-sum {
-  display: none;
-}
-Временные стили*/
 
 .cart {
   position: relative;
@@ -1114,20 +1121,41 @@ li.catalog-button::after {
 
 .breadcrumbs {
   display: flex;
+  width: 853px;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
   list-style: none;
 }
 
 .breadcrumbs a {
-  padding-right: 20px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.breadcrumbs li {
+  position: relative;
+  margin-right: 20px;
+}
 
-.breadcrumbs a:last-child {
-  padding-left: 0;
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after{
+  content: "»";
+  position: absolute;
+  top: -1px;
+  right: -13px;
+  width: 7px;
+  height: 6px;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
 }
 
 .breadcrumbs a:hover,
@@ -1150,7 +1178,10 @@ li.catalog-button::after {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 35px;
+  font-weight: 500;
   line-height: 41px;
 }
 
