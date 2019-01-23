@@ -1179,7 +1179,7 @@ li.catalog-button::after {
 
 .page-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   font-size: 35px;
   font-weight: 500;
   line-height: 41px;
@@ -1197,10 +1197,14 @@ li.catalog-button::after {
 }
 
 .filter-form fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
 .filter-form legend {
+  margin-bottom: 7px;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1209,15 +1213,143 @@ li.catalog-button::after {
   line-height: 18px;
 }
 
-.filter-form select {
+.background-select {
+  position: relative;
+  padding: 6px 10px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 13px;
+  border-radius: 25px;
+}
+.filter-form select {
+  width: 173px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 .filter-form select:hover,
 .filter-form select:focus {
   color: #000000;
+}
+
+.filter-form .icon-select {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  width: 11px;
+  height: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.filter-form .sorting {
+  margin-right: 16px;
+}
+
+ .filter-sort:hover + .icon-select polyline {
+  fill: #323232;
+}
+
+.range {
+  position: relative;
+  width: 215px;
+}
+
+.filter-form .price-controls {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 113px;
+  width: 7px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.price-controls label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.price-controls input {
+  width: 55px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.range-label {
+  margin-right: 3px;
+}
+
+.min-price,
+.max-price {
+  width: 60px;
+  margin-right: 9px;
+  margin-top: -1px;
+}
+
+.range .filters-background {
+  width: 195px;
+  height: 20px;
+  padding: 8px 12px;
+  background-color: rgba(255, 255 ,255 , 0.2);
+  border-radius: 25px;
+}
+
+.range-controls {
+  position: absolute;
+  bottom: 35px;
+  left: 17px;
+}
+
+.scale {
+  width: 175px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: 5px;
+}
+
+.bar {
+  width: 103px;
+  height: 4px;
+  background: #ffffff;
+  margin-left: 25px;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 17px;
+}
+
+.range-toggle-max {
+  right: 45px;
+}
+
+.range-toggle:hover {
+  transform: scale(1.2);
 }
 
 .catalog-list {
