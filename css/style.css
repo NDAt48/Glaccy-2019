@@ -1206,6 +1206,7 @@ li.catalog-button::after {
   margin-bottom: 7px;
   padding-left: 15px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 16px;
 }
 
@@ -1222,7 +1223,7 @@ li.catalog-button::after {
 }
 .filter-form select {
   width: 173px;
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -1246,6 +1247,7 @@ li.catalog-button::after {
 }
 
 .filter-form .sorting {
+  margin-bottom: 16px;
   margin-right: 16px;
 }
 
@@ -1256,6 +1258,10 @@ li.catalog-button::after {
 .range {
   position: relative;
   width: 215px;
+}
+
+.filter-form .range {
+  margin-right: 15px;
 }
 
 .filter-form .price-controls {
@@ -1303,7 +1309,7 @@ li.catalog-button::after {
 
 .range .filters-background {
   width: 195px;
-  height: 20px;
+  min-height: 20px;
   padding: 8px 12px;
   background-color: rgba(255, 255 ,255 , 0.2);
   border-radius: 25px;
@@ -1311,7 +1317,7 @@ li.catalog-button::after {
 
 .range-controls {
   position: absolute;
-  bottom: 35px;
+  bottom: 31px;
   left: 17px;
 }
 
@@ -1352,6 +1358,122 @@ li.catalog-button::after {
   transform: scale(1.2);
 }
 
+.filter-form .filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 415px;
+  margin: 0;
+  padding: 0;
+}
+
+.radio-list .filters-background {
+  width: 415px;
+  min-height: 36px;
+  padding: 7px 12px;
+  border-radius: 25px;
+  background-color: rgba(255, 255 ,255 , 0.2);
+  box-sizing: border-box;
+}
+
+.filter-list .filter-option {
+  position: relative;
+  padding-left: 33px;
+  margin-right: 16px;
+}
+
+.filter-list .filter-option:last-child {
+  margin-right: 0;
+}
+
+.filter-option label {
+  opacity: 0.8;
+  cursor: pointer;
+  user-select: none; 
+}
+
+.radio-input + label::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border: 4px solid rgb(238, 242, 240);
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(238, 242, 240);
+}
+
+.radio-input:disabled + label {
+  opacity: 0.4;
+}
+
+.radio-input:hover + label,
+.radio-input:focus + label {
+  opacity: 1;
+}
+
+.filter-form .checkbox-list {
+  margin-right: 14px;
+}
+
+.checkbox-list .filters-background {
+  min-width: 702px;
+  min-height: 36px;
+  padding: 7px 12px;
+  padding-right: 5px;
+  padding-left: 13px;
+  border-radius: 25px;
+  background-color: rgba(255, 255 ,255 , 0.2);
+  box-sizing: border-box;
+}
+
+.checkbox-list .filter-option {
+  padding-left: 33px;
+  margin-right: 21px;
+}
+
+.checkbox-list .filter-option:last-child {
+  margin-right: 0;
+}
+
+.checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(0.89);
+}
+
+.checkbox-input:checked + label::before {
+  left: -1px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-on.svg");
+}
+
+.checkbox-input:disabled + label {
+  opacity: 0.4;
+}
+
+.checkbox-input:hover + label,
+.checkbox-input:focus + label {
+  opacity: 1;
+}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -1364,12 +1486,15 @@ li.catalog-button::after {
 }
 
 .button-sort {
-  font-size: 14px;
-  line-height: 16px;
+  width: 145px;
+  height: 36px;
+  margin-top: 23px;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #ffffff;
-  border-radius: 11px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
 }
 
 .button-sort:focus,
