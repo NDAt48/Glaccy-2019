@@ -80,14 +80,14 @@
     <section class="promo-slider container">
       <h2 class="visually-hidden">Промо товаров</h2>
       <ul class="slider-list">
-        <li class="slider-item">
+        <li class="slider-item slider-item-active">
           <h3>Крем-брюле и пломбир<br><span class="text-center">с малиновым джемом</span></h3>
           <p class="slider-image">
             <img src="img/icecream-slider-1.png" width="1045" height="881" alt="Изображение Крем-брюле и пломбира с малиновым джемом">
           </p>
           <a class="button" href="#">Давайте оба!</a>
         </li>
-        <li class="slider-item">
+        <li class="slider-item ">
           <h3>Шоколадный пломбир<br><span class="text-center">и лимонный сорбет</span></h3>
           <p class="slider-image">
             <img src="img/icecream-slider-2.png" width="1065" height="859" alt="Изображение Шоколадного пломбира и лимонного сорбета">
@@ -103,13 +103,13 @@
         </li>
       </ul>
       <div class="slider-buttons">
-        <button type="button" class="slider-button slider-button--active">
+        <button type="button" class="slider-button button-1 slider-button--active">
           <span class="visually-hidden">1</span>
         </button>
-        <button type="button" class="slider-button">
+        <button type="button" class="slider-button button-2">
           <span class="visually-hidden">2</span>
         </button>
-        <button type="button" class="slider-button">
+        <button type="button" class="slider-button button-3">
           <span class="visually-hidden">3</span>
         </button>
       </div>
@@ -229,7 +229,7 @@
         <span class="text-uppercase">8 812 450-25-25</span>
         (с 10 до 20 ежедневно)
       </p>
-        <a class="feedback-button button" href="#">Форма обратной связи</a>
+        <a class="feedback-button button js-feedback-button" href="#">Форма обратной связи</a>
     </section>
   </div>
 
@@ -306,5 +306,7 @@
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <div class="modal-overlay"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>
